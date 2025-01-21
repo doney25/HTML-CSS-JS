@@ -1,0 +1,33 @@
+let min=1;
+let max=100;
+let answer;
+answer=Math.floor(Math.random()*(max-min+1))+min;
+let guess;
+let attempts=0;
+let running=true
+
+while(running)
+{
+guess=window.prompt(`Enter a number between 1-100`);
+guess=Number(guess);
+if(isNaN(guess))
+{
+   window.alert(`Enter Valid Number`)
+}
+else if(guess<min||guess>max)
+{
+   window.alert(`Enter Valid Number`)
+}
+else{
+   attempts++;
+   if(guess<answer)
+      window.alert(`Your answer is very low`)
+   else if(guess>answer)
+      window.alert(`Your answer is very high`)
+   else
+   {
+      window.alert(`Correct!!! Answer is ${answer},you took ${attempts} attempts`)
+      running=false;
+   }       
+   }
+}
