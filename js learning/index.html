@@ -1,0 +1,72 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="btnset">
+    <label>select one</label><br><br>
+    <input type="radio" id="myCheckBox" name="dot"     >
+    <label for="myCheckBox">one</label> <br>
+    <input type="radio" id="myRadio1" name="dot">
+    <label for="myRadio1">two</label><br>
+    <input type="radio" id="myRadio2" name="dot">
+    <label for="myRadio2">three</label><br>
+    <input type="radio" id="myRadio3" name="dot">
+    <label for="myRadio3">four</label><br><br>
+    <button id="submitBtn">submit</button>
+    </div>
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Ticket Booking</h1>
+        
+        <label for="movie">Choose a movie:</label>
+        <select id="movie">
+            <option value="1">Marco</option>
+            <option value="2">Riffle Club</option>
+            <option value="3">Pani</option>
+        </select>
+        
+        <label for="tickets">Enter the number of tickets:</label>
+        <input type="number" id="tickets" min="1" value="1">
+        
+        <label for="ticket-type">Select ticket type:</label>
+        <select id="ticket-type">
+            <option value="1">Premium</option>
+            <option value="2">Normal</option>
+        </select>
+
+        <label for="show-time">Select show time:</label>
+        <select id="show-time">
+            <option value="1">10.00 AM</option>
+            <option value="2">2.00 PM</option>
+            <option value="3">6.00 PM</option>
+            <option value="4">10.00 PM</option>
+        </select>
+        
+        <button onclick="calculateCost()">Calculate Cost</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
